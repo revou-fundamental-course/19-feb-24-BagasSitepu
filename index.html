@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My WEB</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="nav-container">
+            <div class="title">
+                <div class="icon" style="background-image: url(assets/logo1.png);"></div>
+            </div>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Our Profile</a>
+                <a href="#">Portofolio</a>
+                <a href="#message-section">Message Us</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Hai <span id="name">Pengunjung</span>, Selamat Datang di Website Perusahaan Think BIG</h1>
+            <p>Perusahaan kami bergerak di bidang Teknologi untuk menciptakan berbagai teknologi untuk masa depan</p>
+            <img class="header-img" src="assets/logo1.png" alt="header">
+        </header>
+
+        <section class="headquarter">
+            <h1>Our Headquarter</h1>
+            <div class="content">
+                <div class="item">
+                    <img class="header-img1" src="assets/smg.jpeg" alt="Semarang">
+                    <p>Semarang</p>
+                </div>
+                <div class="item">
+                    <img class="header-img1" src="assets/yk.jpeg" alt="Yogyakarta">
+                    <p>Yogyakarta</p>
+                </div>
+                <div class="item">
+                    <img class="header-img1" src="assets/jkt.jpg" alt="Jakarta">
+                    <p>Jakarta</p>
+                </div>
+            </div>
+        </section>        
+
+        <section id="message-section">
+            <h1>Message Us</h1>
+            <div class="flex-form">
+                <div class="form-container">
+                    <form id="message-form">
+                        <label for="nama">Nama : </label>
+                        <input type="text" id="nama" name="nama"><br><br>
+                        <label for="tgl_lahir">Tanggal Lahir : </label>
+                        <input type="date" id="tgl_lahir" name="tgl_lahir"><br><br>
+                        <label>Jenis Kelamin : </label>
+                        <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki">
+                        <label for="laki_laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label><br><br>
+                        <label for="pesan">Pesan : </label>
+                        <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="data-container" id="data-container">
+                    <p><strong>Current date:</strong> <span id="current-date"></span></p>
+                    <p><strong>Nama:</strong> <span id="nama"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="tgl_lahir"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="jenis_kelamin"></span></p>
+                    <p><strong>Pesan:</strong> <span id="pesan"></span></p>
+                </div>
+            </div>
+        </section>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
